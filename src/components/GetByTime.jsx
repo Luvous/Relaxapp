@@ -14,28 +14,28 @@ function GetByTime() {
         return (
             <div className='container'>
                 {/* <h1>Morning</h1> */}
-                <img className='time-background' src={image_earlymorning} />
+                <img alt='' className='time-background' src={image_earlymorning} />
             </div>
         )
     } else if (hour > 11 && hour <= 15) {
         return (
             <div className='container'>
                 {/* <h1>Mid Day</h1> */}
-                <img className='time-background' src={image_midday} />
+                <img alt='' className='time-background' src={image_midday} />
             </div>
         )
     } else if (hour > 15 && hour <= 20) {
         return (
             <div className='container'>
                 {/* <h1>Evening</h1> */}
-                <img className='time-background' src={image_evening} />
+                <img alt='' className='time-background' src={image_evening} />
             </div>
         )
-    } else if (hour > 20 && hour <= 7) {
+    } else if (hour > 20 && (hour <= 7 || hour === 0)) {
         return (
             <div className='container'>
                 {/* <h1>Night</h1> */}
-                <img className='time-background' src={image_night} />
+                <img alt='' className='time-background' src={image_night} />
             </div>
 
         )

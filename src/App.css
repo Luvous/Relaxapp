@@ -34,6 +34,19 @@ body{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all .2s;
+    box-shadow: 2px black;
+}
+
+
+.toolbar:hover{
+    background: var(--white);
+    transition: all .2s ease-out;
+}
+
+.toolbar:hover svg{
+    color: var(--black)!important;
+    transition: all .2s ease-out;
 }
 
 @media only screen {
